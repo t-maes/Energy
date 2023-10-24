@@ -13,4 +13,4 @@ class IMPORT_OT_MAP(Operator):
 
     def execute(self, context):
         return bpy.ops.import_image.to_plane(files=[{'name': bpy.data.scenes["Scene"].atk_aerial}], align_axis='Z+',
-                                             height=41.095)
+                                              size_mode='DPBU', factor=15.3)
